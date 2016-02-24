@@ -33,15 +33,12 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tsMenuAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.txtResult = new System.Windows.Forms.TextBox();
             this.btnProcess = new System.Windows.Forms.Button();
             this.txtFileName = new System.Windows.Forms.TextBox();
             this.btnInputFile = new System.Windows.Forms.Button();
             this.ofDialog = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -49,7 +46,6 @@
             this.panel1.Controls.Add(this.progressBar1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Controls.Add(this.txtResult);
             this.panel1.Controls.Add(this.btnProcess);
             this.panel1.Controls.Add(this.txtFileName);
@@ -85,26 +81,6 @@
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Input File Path:";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsMenuAbout});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 214);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(602, 24);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // tsMenuAbout
-            // 
-            this.tsMenuAbout.Name = "tsMenuAbout";
-            this.tsMenuAbout.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.tsMenuAbout.Size = new System.Drawing.Size(52, 20);
-            this.tsMenuAbout.Text = "About";
-            this.tsMenuAbout.Click += new System.EventHandler(this.tsMenuAbout_Click);
             // 
             // txtResult
             // 
@@ -166,8 +142,6 @@
             this.Text = "Location Helper";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -182,8 +156,6 @@
         private System.Windows.Forms.TextBox txtFileName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tsMenuAbout;
         private System.Windows.Forms.ProgressBar progressBar1;
 
     }

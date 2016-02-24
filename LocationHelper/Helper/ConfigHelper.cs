@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
 
 namespace LocationHelper.Helper
 {
@@ -36,22 +33,5 @@ namespace LocationHelper.Helper
             get { return Convert.ToInt32(ConfigurationManager.AppSettings["DataSheetNumber"]); }
         }
 
-        public static string Name
-        {
-            get
-            {
-                const string cnfName = "Name";
-
-                var name = ConfigurationManager.AppSettings.AllKeys.Contains(cnfName)
-                    ? ConfigurationManager.AppSettings[cnfName]
-                    : "Unknown";
-
-                if (DateTime.Now == new DateTime(DateTime.Now.Year, 10, 27))
-                    name = "Babu";
-
-                return name;
-            }
-        }
-        
     }
 }

@@ -28,10 +28,6 @@ namespace LocationHelper
         public FrmLocationHelper()
         {
             InitializeComponent();
-            var showDate = new DateTime(2016, 3, 27);
-
-            menuStrip1.Visible = DateTime.Now >= showDate;
-
         }
 
         private void btnInputFile_Click(object sender, EventArgs e)
@@ -240,12 +236,6 @@ namespace LocationHelper
             }
             else
                 UpdateResultText(message);
-        }
-
-        private void tsMenuAbout_Click(object sender, EventArgs e)
-        {
-            var about = new FrmAbout { Location = Location };
-            about.ShowDialog();
         }
 
         public Excel.Application TryGetExistingExcelApplication()
